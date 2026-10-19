@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Profile</title>
+  <style>
+    body { font-family: Georgia, serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 1rem; color: #222; background: #fafafa; }
+    header, footer { text-align: center; padding: 1rem 0; }
+    nav { text-align: center; padding: .5rem 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+    nav a { margin: 0 .75rem; color: #1a4f8b; }
+    section { margin: 2rem 0; }
+    img { max-width: 160px; border-radius: 50%; border: 3px solid #1a4f8b; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #999; padding: .5rem; text-align: left; }
+    th { background: #e6eef7; }
+    form label { display: block; margin-top: .75rem; }
+    fieldset { margin-top: .75rem; }
+    button, input[type="submit"] { margin-top: 1rem; padding: .5rem 1rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <h1>Hi, I'm Your Name</h1>
+    <p>Student | Web Development Learner</p>
+  </header>
+
+  <!-- menu links -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#academics">Academics</a>
+    <a href="#media">Media</a>
+    <a href="#more">More Info</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- about me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is <b>Your Name</b> and I am a student who loves
+        <i>technology</i> and <u>learning new skills</u>. Right now I am
+        practicing HTML, and my goal is to become a
+        <mark>professional web developer</mark>.
+      </p>
+    </section>
+
+    <!-- table -->
+    <section id="academics">
+      <h2>Academic Information</h2>
+      <table>
+        <caption>My academic record</caption>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Institution</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SSC</td>
+            <td>Your School Name</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>HSC</td>
+            <td>Your College Name</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Bachelor's</td>
+            <td>Your University Name</td>
+            <td>2023 - Present</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- image and audio -->
+    <section id="media">
+      <h2>Photo and Audio</h2>
+
+      <!-- change src to your own photo -->
+      <img
+        src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><rect width='160' height='160' fill='%231a4f8b'/><circle cx='80' cy='62' r='28' fill='white'/><ellipse cx='80' cy='140' rx='46' ry='38' fill='white'/></svg>"
+        alt="Profile picture of Your Name"
+        width="160" height="160">
+
+      <p>Listen to this audio:</p>
+      <!-- change src to your own audio file -->
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- details and button -->
+    <section id="more">
+      <h2>More About Me</h2>
+
+      <details>
+        <summary>My favorite things</summary>
+        <p>I enjoy reading, playing cricket, and exploring new technology.</p>
+      </details>
+
+      <details>
+        <summary>My goals</summary>
+        <p>I want to build useful websites and keep learning every day.</p>
+      </details>
+
+      <button type="button" onclick="alert('Thanks for visiting my profile!')">
+        Click Me
+      </button>
+    </section>
+
+    <!-- form -->
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+
+        <label for="name">Name:
+          <input type="text" id="name" name="name" required>
+        </label>
+
+        <label for="email">Email:
+          <input type="email" id="email" name="email" required>
+        </label>
+
+        <label for="password">Password:
+          <input type="password" id="password" name="password" required>
+        </label>
+
+        <!-- radio buttons -->
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </fieldset>
+
+        <!-- checkboxes -->
+        <fieldset>
+          <legend>Hobbies</legend>
+          <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+          <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+          <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+          <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; 2026 Your Name</p>
+  </footer>
+
+</body>
+</html>
